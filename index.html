@@ -4,33 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        #noButton {
-            position: absolute;
-            transition: 1s;
-        }
-    </style>
 </head>
 <body>
-    <h1>Quieres darme un besito? </h1>
-    <button id="yesButton">CHI :D</button>
-    <button id="noButton">ÑO >:V</button>
-
-    <script>
-        const noButton = document.getElementById('noButton');
-
-        document.addEventListener('mousemove', function(e) {
-            const x = e.pageX;
-            const y = e.pageY;
-            const buttonRect = noButton.getBoundingClientRect();
-            const offsetX = Math.abs(x - buttonRect.x);
-            const offsetY = Math.abs(y - buttonRect.y);
-
-            if (offsetX < 100 && offsetY < 100) {
-                noButton.style.left = Math.random() * window.innerWidth + 'px';
-                noButton.style.top = Math.random() * window.innerHeight + 'px';
-            }
-        });
-    </script>
+    <h1>Esteban Leandro Marin</h1>
+    <h2>Software Developer</h2>
 </body>
 </html>
